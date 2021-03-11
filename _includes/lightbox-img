@@ -1,0 +1,7 @@
+<a href="{{ include.src }}"
+   data-lightbox="all-images"
+   data-title="{{ include.caption }}"
+   data-alt="{{ include.caption }}"><img
+   src="{{ include.src | replace: '.jpg', '_thumbnail_?x?.jpg' | replace: '?x?', include.thumb}}"
+   title="{{ include.caption }}"
+   alt="{{ include.caption }}"/></a>
